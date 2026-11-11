@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C1 · Estudo da semana — Trilha GameDev 2D</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="trilha.css">
+</head>
+<body>
+
+<header class="hud"><div class="dentro">
+  <span class="marca"><img src="img/vida.png" alt="">GameDev 2D · C1</span>
+  <nav>
+    <a href="#roteiro">Roteiro</a><a href="#bloco1">O que é jogo</a><a href="#bloco2">MDA</a><a href="#bloco3">Loop</a><a href="#bloco4">Documentar</a>
+    <a href="#bloco5">Protótipo</a><a href="#atividade">Atividade</a><a href="#entrega">Entrega</a>
+  </nav>
+</div></header>
+
+<section class="abertura">
+  <div class="selo">DESIGN DE JOGOS 2D: DA IDEIA AO GDD · SITE 2 DE 3 · EAD DA SEMANA (8H)</div>
+  <h1>Estudo da semana: <em>a teoria por trás do castelo</em>.</h1>
+  <p class="lead">No sábado você desmontou o jogo modelo na prática. Esta semana você aprofunda a teoria com material de quem estuda e faz jogos — e usa tudo isso para criar o <b>seu</b> jogo, com a mesma estrutura do castelo e o seu mundo.</p>
+  <div class="palco" aria-hidden="true"><div class="sprite porco"></div><div class="sprite rei"></div></div>
+  <div class="inventario">
+    <div class="slot"><img src="img/porta.png" alt=""><div class="rot">Etapa anterior</div><div class="val"><a href="https://rclepf.github.io/GameDev2D-C1-01/">Site 1 · Aula inicial</a></div></div>
+    <div class="slot"><img src="img/bau.png" alt=""><div class="rot">Você vai estudar</div><div class="val">5 blocos de fundamentação (5h30)</div></div>
+    <div class="slot entrega"><img src="img/chave.png" alt=""><div class="rot">Você vai produzir</div><div class="val">GDD do seu jogo + protótipo testado (C1.2)</div></div>
+    <div class="slot"><img src="img/porta.png" alt=""><div class="rot">Próxima etapa</div><div class="val"><a href="https://rclepf.github.io/GameDev2D-C1-03/">Site 3 · Aula final</a></div></div>
+  </div>
+</section>
+
+<main>
+
+<section class="sala" id="roteiro">
+  <div class="sala-cab"><span class="sala-num">ROTEIRO</span><h2>Como distribuir as 8 horas</h2></div>
+  <p class="objetivo">Sugestão: um bloco por dia, atividade no fim de semana — antes do sábado.</p>
+  <table>
+    <tr><th>Bloco</th><th>Tema</th><th>Tempo</th></tr>
+    <tr><td>1</td><td>O que é um jogo e o que faz um game designer</td><td>1h15</td></tr>
+    <tr><td>2</td><td>Elementos de um jogo e MDA</td><td>1h30</td></tr>
+    <tr><td>3</td><td>Loop central</td><td>45 min</td></tr>
+    <tr><td>4</td><td>Documentação: do GDD de 200 páginas ao de uma página</td><td>1h</td></tr>
+    <tr><td>5</td><td>Protótipo e playtest</td><td>1h</td></tr>
+    <tr><td>—</td><td><b>Atividade C1.2</b>: o seu jogo em uma página</td><td>2h30</td></tr>
+  </table>
+  <div class="caixa dica"><span class="tag">Como estudar cada bloco</span>Leia as <b>perguntas-guia</b> antes do material. Responda-as com as suas palavras num caderno ou documento: elas são a matéria-prima do debate no Classroom e caem no quiz da aula final.</div>
+  <div class="caixa atencao"><span class="tag">Material em inglês</span>Os itens marcados “EN” são opcionais ou têm legenda automática. Use a tradução do navegador (botão direito → Traduzir) quando precisar.</div>
+</section>
+
+<section class="sala" id="bloco1">
+  <div class="sala-cab"><span class="sala-num">BLOCO 1</span><h2>O que é um jogo — e o que faz um game designer</h2></div>
+  <p class="objetivo">1h15 · Fundamentação de base para tudo o que vem depois.</p>
+  <table>
+    <tr><th>Tipo</th><th>Material</th><th>Idioma</th><th>Tempo</th></tr>
+    <tr><td>Aula</td><td><a href="https://hmateriais.imd.ufrn.br/materialV2/assets/download/design-de-jogos-digitais/01-introducao-ao-game-design-DESIGN-DE-JOGOS-DIGITAIS-IMD.pdf" target="_blank" rel="noopener"><b>Design de Jogos Digitais · Aula 01 — Introdução ao Game Design</b></a><br><small>Instituto Metrópole Digital (IMD/UFRN)</small></td><td>PT</td><td>40 min</td></tr>
+    <tr><td>Capítulo</td><td><a href="https://ludes.cos.ufrj.br/wp-content/uploads/2016/07/LJP1C01-O-que-sao-jogos-v2.pdf" target="_blank" rel="noopener"><b>O Que São Jogos? — Geraldo Xexéo</b></a><br><small>LUDES/COPPE/UFRJ · leia as seções sobre objetivos, regras, conflito e o guia de 20 perguntas</small></td><td>PT</td><td>35 min</td></tr>
+  </table>
+  <div class="porque"><b>Perguntas-guia:</b> (1) Em que fases da produção o game designer trabalha? (2) Para Xexéo, o que separa um jogo de um brinquedo? (3) Escolha três das 20 perguntas do guia de Xexéo e responda-as sobre o castelo.</div>
+</section>
+
+<section class="sala" id="bloco2">
+  <div class="sala-cab"><span class="sala-num">BLOCO 2</span><h2>Elementos de um jogo e MDA</h2></div>
+  <p class="objetivo">1h30 · Aprofunda as Salas 03 e 04 da aula inicial.</p>
+  <table>
+    <tr><th>Tipo</th><th>Material</th><th>Idioma</th><th>Tempo</th></tr>
+    <tr><td>Aula</td><td><a href="https://hmateriais.imd.ufrn.br/materialV2/assets/download/design-de-jogos-digitais/02-elementos-de-um-jogo-DESIGN-DE-JOGOS-DIGITAIS-IMD.pdf" target="_blank" rel="noopener"><b>Design de Jogos Digitais · Aula 02 — Elementos de um Jogo (MDA e Tétrade Elemental)</b></a><br><small>IMD/UFRN · inclui fluxo, círculo mágico, feedback e escolhas significativas</small></td><td>PT</td><td>50 min</td></tr>
+    <tr><td>Artigo original</td><td><a href="https://users.cs.northwestern.edu/%7Ehunicke/MDA.pdf" target="_blank" rel="noopener"><b>MDA: A Formal Approach to Game Design and Game Research</b></a><br><small>Hunicke, LeBlanc e Zubek (2004) · 5 páginas · o artigo que criou o modelo</small></td><td>EN</td><td>30 min</td></tr>
+    <tr><td>Tradução</td><td><a href="https://www.educativa.com/wp-content/uploads/2020/11/El-marco-MDA-en-espa%C3%B1ol-v2.pdf" target="_blank" rel="noopener"><b>El marco MDA (versão em espanhol do artigo)</b></a><br><small>Para quem lê melhor em espanhol do que em inglês</small></td><td>ES</td><td>—</td></tr>
+  </table>
+  <div class="porque"><b>Perguntas-guia:</b> (1) Por que o designer vê o jogo de M para E e o jogador de E para M? (2) Quais das oito estéticas do artigo (sensação, fantasia, narrativa, desafio, companheirismo, descoberta, expressão, submissão) o castelo entrega? (3) O que é a Tétrade Elemental de Schell e onde ela difere do MDA?</div>
+</section>
+
+<section class="sala" id="bloco3">
+  <div class="sala-cab"><span class="sala-num">BLOCO 3</span><h2>Loop central</h2></div>
+  <p class="objetivo">45 min · O primeiro campo do seu GDD.</p>
+  <table>
+    <tr><th>Tipo</th><th>Material</th><th>Idioma</th><th>Tempo</th></tr>
+    <tr><td>Artigo</td><td><a href="https://unity.com/pt/blog/find-your-core-game-loop" target="_blank" rel="noopener"><b>Pular, combinar, construir ou explorar? Como encontrar seu loop de jogo principal</b></a><br><small>Blog da Unity · o verbo central define gênero, controles e rotina do jogador</small></td><td>PT</td><td>25 min</td></tr>
+  </table>
+  <div class="porque"><b>Perguntas-guia:</b> (1) Qual é o verbo central do castelo? (2) O artigo propõe testes para um loop — aplique-os ao loop que você escreveu no sábado. Ele passa em todos? (3) Que verbo central você gostaria que o seu jogo tivesse, mantendo a estrutura de plataforma?</div>
+</section>
+
+<section class="sala" id="bloco4">
+  <div class="sala-cab"><span class="sala-num">BLOCO 4</span><h2>Documentação: do GDD gigante ao de uma página</h2></div>
+  <p class="objetivo">1h · Por que a trilha usa um GDD de uma página.</p>
+  <table>
+    <tr><th>Tipo</th><th>Material</th><th>Idioma</th><th>Tempo</th></tr>
+    <tr><td>Aula</td><td><a href="https://hmateriais.imd.ufrn.br/materialV2/assets/download/design-de-jogos-digitais/10-documentacao-DESIGN-DE-JOGOS-DIGITAIS-IMD.pdf" target="_blank" rel="noopener"><b>Design de Jogos Digitais · Aula 10 — Documentação</b></a><br><small>IMD/UFRN · proposta, documento conceitual e o GDD tradicional</small></td><td>PT</td><td>35 min</td></tr>
+    <tr><td>Palestra</td><td><a href="https://gamedeveloper.com/design/video-one-page-designs" target="_blank" rel="noopener"><b>One-Page Designs — Stone Librande (GDC 2010)</b></a><br><small>Game Developer · vídeo gratuito do GDC Vault com resumo em texto</small></td><td>EN</td><td>25 min</td></tr>
+    <tr><td>Artigo</td><td><a href="https://unity.com/blog/one-page-game-design-document" target="_blank" rel="noopener"><b>Start simple: A one-page design document for your first game</b></a><br><small>Blog da Unity · modelo de GDD de uma página para o primeiro jogo</small></td><td>EN</td><td>—</td></tr>
+  </table>
+  <div class="porque"><b>Perguntas-guia:</b> (1) Por que, segundo Librande, GDDs longos não são lidos? (2) Que tipo de informação vira desenho em vez de texto num documento de uma página? (3) Compare o GDD tradicional da aula do IMD com o modelo da trilha: o que ficou de fora e por que isso não faz falta num jogo de 3 fases?</div>
+</section>
+
+<section class="sala" id="bloco5">
+  <div class="sala-cab"><span class="sala-num">BLOCO 5</span><h2>Protótipo e playtest</h2></div>
+  <p class="objetivo">1h · A base da atividade desta semana.</p>
+  <table>
+    <tr><th>Tipo</th><th>Material</th><th>Idioma</th><th>Tempo</th></tr>
+    <tr><td>Aula</td><td><a href="https://hmateriais.imd.ufrn.br/materialV2/assets/download/design-de-jogos-digitais/09-prototipacao-e-testes-DESIGN-DE-JOGOS-DIGITAIS-IMD.pdf" target="_blank" rel="noopener"><b>Design de Jogos Digitais · Aula 09 — Prototipação e Testes</b></a><br><small>IMD/UFRN · protótipos de baixa e alta fidelidade, playtest e observação</small></td><td>PT</td><td>40 min</td></tr>
+    <tr><td>Artigo</td><td><a href="https://sol.sbc.org.br/index.php/sbgames_estendido/article/view/23695" target="_blank" rel="noopener"><b>A Prototipagem em Papel no Desenvolvimento de Jogos Digitais em Sala de Aula</b></a><br><small>Silva, Fernandes e Fernandes · SBGames 2022 · relato de prototipagem em papel</small></td><td>PT</td><td>20 min</td></tr>
+  </table>
+  <div class="porque"><b>Perguntas-guia:</b> (1) Qual a diferença entre protótipo de baixa e de alta fidelidade? Qual você vai fazer esta semana? (2) Por que o observador não deve ajudar quem está testando? (3) Que dados vale anotar num playtest?</div>
+</section>
+
+<section class="sala" id="atividade">
+  <div class="sala-cab"><span class="sala-num">ATIVIDADE C1.2</span><h2>O seu jogo em uma página</h2></div>
+  <p class="objetivo">2h30 · O marco da UC. Use tudo o que você estudou nos cinco blocos.</p>
+
+  <h3>1. O que mantém, o que troca</h3>
+  <p>Nas próximas UCs você vai programar o mesmo que o castelo tem. Por isso o seu jogo precisa caber nesta estrutura. O que você troca é <b>quem</b>, <b>onde</b> e <b>com o quê</b>:</p>
+  <table>
+    <tr><th>No castelo</th><th>Função no jogo</th><th>No seu jogo</th></tr>
+    <tr><td>O rei</td><td>Herói que anda, pula e cai</td><td><i>quem?</i></td></tr>
+    <tr><td>Martelo</td><td>Ataque de perto</td><td><i>espada, soco, vassoura…</i></td></tr>
+    <tr><td>Porco patrulheiro</td><td>Inimigo que anda de um lado para o outro</td><td><i>?</i></td></tr>
+    <tr><td>Canhão com porco</td><td>Inimigo que ataca de longe</td><td><i>?</i></td></tr>
+    <tr><td>Chave e baú</td><td>Item que libera o caminho</td><td><i>?</i></td></tr>
+    <tr><td>Bomba</td><td>Arma especial com estoque</td><td><i>?</i></td></tr>
+    <tr><td>Rei dos porcos</td><td>Chefão que só cai com a arma especial</td><td><i>?</i></td></tr>
+    <tr><td>Castelo, 3 salas</td><td>Lugar e progressão</td><td><i>onde? 3 fases</i></td></tr>
+  </table>
+  <div class="caixa dica"><span class="tag">Exemplos de troca</span>Uma gata faxineira com vassoura numa nave invadida por ratos-robô, que joga sabão no rato-rei. Um surfista com prancha numa praia de caranguejos, que joga coco no polvo-chefe. Mesma estrutura, outro jogo.</div>
+  <div class="caixa atencao"><span class="tag">Uma novidade, no máximo</span>Você pode acrescentar <b>uma</b> mecânica que o castelo não tem (ex.: pulo duplo, item de cura). Mais de uma não cabe nas 16 horas de cada módulo.</div>
+
+  <h3>2. Três ideias, uma escolha</h3>
+  <div class="passo">
+    <div class="passo-tit"><span class="moeda">1</span>Dez minutos, três ideias</div>
+    <p>Para cada ideia, preencha a tabela do item 1 e escreva uma frase de venda. Não julgue enquanto escreve.</p>
+    <div class="porque"><b>Por quê:</b> a primeira ideia costuma ser a mais óbvia. A terceira, forçada, costuma ser a mais original.</div>
+  </div>
+  <div class="passo">
+    <div class="passo-tit"><span class="moeda">2</span>Escolha com critério</div>
+    <table>
+      <tr><th>Pergunta</th><th>Ideia 1</th><th>Ideia 2</th><th>Ideia 3</th></tr>
+      <tr><td>Cabe na estrutura do castelo sem forçar?</td><td></td><td></td><td></td></tr>
+      <tr><td>Eu quero desenhar isso por 3 módulos?</td><td></td><td></td><td></td></tr>
+      <tr><td>A frase de venda faz alguém querer jogar?</td><td></td><td></td><td></td></tr>
+      <tr><td>Consigo explicar o loop em uma frase?</td><td></td><td></td><td></td></tr>
+    </table>
+    <p>Dê 0, 1 ou 2 em cada célula e fique com a maior soma.</p>
+  </div>
+
+  <h3>3. O orçamento de assets</h3>
+  <p>O castelo usa este conjunto. Ele é o <b>teto</b> do seu jogo:</p>
+  <table>
+    <tr><th>Asset</th><th>Quantidade no castelo</th><th>Módulo em que você produz</th></tr>
+    <tr><td>Herói</td><td>8 animações (parado, correr, pular, cair, atacar, dano, morte, porta)</td><td>P1/V1 desenho · P2/V2 animação</td></tr>
+    <tr><td>Inimigo comum</td><td>2 animações (andar, morrer)</td><td>P1/V1 · P2/V2</td></tr>
+    <tr><td>Inimigo de longe</td><td>2 animações + projétil</td><td>P1/V1 · P2/V2</td></tr>
+    <tr><td>Chefão</td><td>2 animações (parado, atacar)</td><td>P1/V1 · P2/V2</td></tr>
+    <tr><td>Cenário</td><td>1 tileset, janela, porta (3 estados), caixa, baú</td><td>P1/V1 · P3/V3</td></tr>
+    <tr><td>Itens e HUD</td><td>chave, bomba, barra de vida</td><td>P1/V1 · C5</td></tr>
+    <tr><td>Fases</td><td>3</td><td>P3/V3</td></tr>
+    <tr><td>Sons</td><td>7 efeitos + 1 trilha</td><td>C4</td></tr>
+  </table>
+  <div class="caixa atencao"><span class="tag">Se não está na lista, não existe</span>A lista de assets do GDD é o contrato da sua produção. Tudo o que aparecer depois e não estiver nela precisa trocar de lugar com algo que sai.</div>
+
+  <h3>4. O protótipo de papel</h3>
+  <div class="passo">
+    <div class="passo-tit"><span class="moeda">3</span>Monte a fase 1 no papel</div>
+    <ol>
+      <li>Em papel quadriculado, desenhe a fase 1 de lado: chão, plataformas, buracos. Cada quadrado é um tile.</li>
+      <li>Recorte fichas pequenas: o herói, os inimigos, a chave, a porta.</li>
+      <li>Escreva as regras num cartão: “a cada turno o herói anda até 3 quadrados ou pula 2 para cima; o inimigo anda 1; encostar no inimigo tira 1 vida”.</li>
+    </ol>
+    <div class="porque"><b>Por quê:</b> no papel uma mudança custa uma borracha. No Godot, uma tarde. Se o loop não funciona em turnos, não vai funcionar em tempo real.</div>
+  </div>
+  <div class="caixa dica"><span class="tag">Turnos também valem</span>O protótipo não precisa ter o ritmo do jogo final. Ele só precisa responder: o jogador entende o que fazer? Há escolha? Há risco?</div>
+
+  <h3>5. Playtest com duas pessoas</h3>
+  <div class="passo">
+    <div class="passo-tit"><span class="moeda">4</span>Observe sem ajudar</div>
+    <ul class="lista-check">
+      <li>Explique só o objetivo e as regras do cartão. Nada de dicas.</li>
+      <li>Anote onde a pessoa hesita, erra ou pergunta.</li>
+      <li>No fim pergunte: “o que você estava tentando fazer?” e “qual foi a parte mais chata?”.</li>
+    </ul>
+    <div class="porque"><b>Por quê:</b> se você explicar, testou a sua explicação, não o jogo. No jogo publicado você não vai estar do lado do jogador.</div>
+  </div>
+  <table>
+    <tr><th>Testador</th><th>O que observei</th><th>O que mudei no design</th></tr>
+    <tr><td>1</td><td><i>Ex.: não percebeu que podia pular na plataforma alta</i></td><td><i>Ex.: baixei a plataforma e pus uma moeda em cima como dica</i></td></tr>
+    <tr><td>2</td><td></td><td></td></tr>
+  </table>
+
+  <h3>6. O GDD</h3>
+  <p>Escreva o GDD de uma página do seu jogo no <a href="Modelo_GDD_1_Pagina.docx">modelo da trilha</a>, usando a tabela do item 1, o orçamento do item 3 e o que o playtest ensinou.</p>
+</section>
+
+<section class="sala" id="entrega">
+  <div class="sala-cab"><span class="sala-num">ENTREGA</span><h2>O que entregar até sábado</h2></div>
+  <div class="caixa checkpoint"><span class="tag">Critérios críticos (todos obrigatórios)</span>
+    <ul class="lista-check">
+      <li>GDD em uma página, com o loop central descrito em uma frase.</li>
+      <li>GDD com condição de vitória, condição de derrota e controles.</li>
+      <li>Protótipo em papel testado por pelo menos duas pessoas, com registro do que foi observado.</li>
+      <li>Pelo menos um ajuste no design justificado pelo playtest.</li>
+    </ul>
+  </div>
+  <div class="caixa dica"><span class="tag">Critérios desejáveis</span>Lista de assets com estimativa de esforço · diagrama visual do loop · moodboard coerente com o público.</div>
+  <table>
+    <tr><th>Entregue no Classroom</th><th>Formato</th></tr>
+    <tr><td>GDD de uma página do seu jogo</td><td>PDF</td></tr>
+    <tr><td>Foto do protótipo de papel montado</td><td>JPG ou PNG</td></tr>
+    <tr><td>Registro do playtest (tabela do item 5)</td><td>Dentro do PDF ou foto</td></tr>
+  </table>
+
+  <div class="caixa checkpoint"><span class="tag">Traga no sábado</span>O protótipo de papel montado, o cartão de regras e as suas respostas às perguntas-guia. A aula final começa com os colegas jogando o seu protótipo.</div>
+  <nav class="vizinhos">
+    <a href="https://rclepf.github.io/GameDev2D-C1-01/"><small>Anterior · aula inicial</small>Site 1 · Desmontando o castelo</a>
+    <a class="prox" href="https://rclepf.github.io/GameDev2D-C1-03/"><small>Próximo · aula final</small>Site 3 · Fechando o design</a>
+  </nav>
+</section>
+</main>
+
+<footer><b>Trilha GameDev 2D</b> · C1 Design de Jogos 2D: da Ideia ao GDD · Site 2 de 3 (EAD) — Estudo da semana<br>SENAI CTTI · Materiais externos pertencem aos seus autores e instituições</footer>
+<script src="trilha.js"></script>
+</body>
+</html>
