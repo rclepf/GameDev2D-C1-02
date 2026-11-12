@@ -1,6 +1,6 @@
 # GameDev2D-C1-02 — Estudo da semana
 
-**Trilha GameDev 2D · SENAI CTTI**
+**Jornada GameDev 2D · SENAI CTTI**
 C1 · Design de Jogos 2D: da Ideia ao GDD · Site 2 de 3 · EAD da semana (8h)
 
 Fundamentação teórica em cinco blocos com material externo (IMD/UFRN, UFRJ, Unity, SBGames, GDC) e perguntas-guia, mais a Atividade C1.2 — o GDD de uma página do jogo do aluno, validado por protótipo em papel (marco da UC).
@@ -23,10 +23,10 @@ Fundamentação teórica em cinco blocos com material externo (IMD/UFRN, UFRJ, U
 ## Estrutura do repositório
 
 - `index.html` — a página do site
-- `trilha.css` — identidade visual da trilha (tema “castelo”, comum a todos os sites)
+- `trilha.css` — identidade visual da jornada (tema “castelo”, comum a todos os sites)
 - `trilha.js` — realce de código GDScript e botão “copiar”
 - `img/` — sprites, telas do jogo modelo e ícones
-- `Modelo_GDD_1_Pagina.docx` — modelo de GDD da trilha
+- `Modelo_GDD_1_Pagina.docx` — modelo de GDD da jornada
 
 ## Publicar no GitHub Pages
 
@@ -42,7 +42,7 @@ Basta abrir o `index.html` no navegador (duplo clique) ou servir a pasta com `py
 ## Créditos
 
 - Material didático: Rodolfo Clepf de Carvalho — SENAI CTTI (FIEMG), Belo Horizonte.
-- Jogo modelo *O Rei e os Porcos*: desenvolvido em Godot 4 para a trilha.
+- Jogo modelo *O Rei e os Porcos*: desenvolvido em Godot 4 para a jornada.
 - Artes e áudios do jogo modelo: pacote da série *“Criando um jogo DO ZERO com Construct 3”* (Daniel Valadares, canal Gamecraft).
 - Fontes: Atkinson Hyperlegible, Bricolage Grotesque e JetBrains Mono (Google Fonts).
 - Materiais externos citados nos sites pertencem aos seus autores e instituições.
